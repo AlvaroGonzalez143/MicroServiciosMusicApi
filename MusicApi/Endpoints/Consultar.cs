@@ -7,13 +7,13 @@ public static class ConsultarEndpoints
     {
          app.MapGet("/ConsultarCatalogo/v1/Album/{Name}/{Artist}", async (string Name, string? Artist, SongBD db) =>
         {
-            if (Artist == null || Artist.Length == 0|| Artist == "NONE")
+            if (Artist != null && Artist.Length != 0&& Artist != "NONE")
             {
                 var AlbumNA = await db.Album.Where(a => a.Title.ToLower() == Name.ToLower())
                .Include(a => a.Songs).Select(a => new { a.Title, a.Artista,canciones = a.Songs.Select(s => new
                {
                    s.Name,
-                   s.Description
+                   s.Lyrics
                }) })
                .ToListAsync();
                 return Results.Ok(AlbumNA);

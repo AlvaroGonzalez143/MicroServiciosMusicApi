@@ -136,7 +136,7 @@ public static class DescargarEndpoint
                                  Title = song.Name,
                                  año = Albums.ReleaseYear,
                                  Artist = song.Artist,
-                                 Description = song.Description,
+                                 Description = song.Lyrics,
                                  Lanzamiento = Albums.Title
 
                                  // Se podría incluir la URL para S3 o Azure si se usaran

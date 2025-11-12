@@ -47,7 +47,7 @@
 **Song**
  Id
  Name 
- Description 
+ Lyrics 
  Artist 
  ImageRuta 
  RutaArchivo
@@ -93,3 +93,19 @@ METODO GET: DEVUELVE EL ARCHIVO ZIP DEL ALBUM
 
 /DescargarCancion/v1/{songName}/{Artista}
 METODO GET: DEVUELVE EL ARCHIVO ZIP DE LA CANCION ALBUM
+
+LAS TABLAS DE LA BASE DE DATOS SON LAS SIGUIENTES
+album :
+ID INT pk
+Title VARCHAR
+Artista VARCHAR
+RelaseYear int
+
+song 
+ID INT pk
+Name Varchar
+Lyrics Text
+Artist Varchar
+RutaArchivo Varchar
+ImageRuta Varchar
+AlbumID INT fk
