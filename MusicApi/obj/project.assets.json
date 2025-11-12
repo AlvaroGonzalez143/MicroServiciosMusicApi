@@ -2361,11 +2361,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\DiseñoWebs\\MicroServicios\\MusicApi\\MusicApi.csproj",
+      "projectUniqueName": "C:\\Users\\Alvaro\\Documents\\GitHub\\MicroServiciosMusicApi\\MusicApi\\MusicApi.csproj",
       "projectName": "MusicApi",
-      "projectPath": "C:\\Users\\Alvaro\\Desktop\\DiseñoWebs\\MicroServicios\\MusicApi\\MusicApi.csproj",
+      "projectPath": "C:\\Users\\Alvaro\\Documents\\GitHub\\MicroServiciosMusicApi\\MusicApi\\MusicApi.csproj",
       "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alvaro\\Desktop\\DiseñoWebs\\MicroServicios\\MusicApi\\obj\\",
+      "outputPath": "C:\\Users\\Alvaro\\Documents\\GitHub\\MicroServiciosMusicApi\\MusicApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

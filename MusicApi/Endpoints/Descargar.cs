@@ -1,10 +1,6 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.AspNetCore.Mvc; // Requerido para [FromForm]
+
 using Microsoft.EntityFrameworkCore; //
 using System.IO.Compression; // Necesario para ZipArchive
-using System.Runtime.InteropServices;
 using System.Text.Json;
 namespace YourProject.Endpoints;
 public static class DescargarEndpoint
@@ -35,7 +31,7 @@ public static class DescargarEndpoint
                      // Usamos un ZipArchive para construir el archivo ZIP en el MemoryStream
                      using (var zipArchive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
                      {
-                         // === A. Agregar el MP3 (Obligatorio) ===
+                    
                          if (!File.Exists(mp3Path))
                              return Results.Problem("El archivo MP3 no se encontró en el disco.", statusCode: 404);
 
@@ -58,14 +54,13 @@ public static class DescargarEndpoint
                              }
                          }
 
-                         // === C. Agregar los Metadatos (JSON) ===
-                         // Creamos un DTO ligero para los metadatos sin las rutas de disco.
-                         var metadata = new DTO
+                    
+                         var metadata = new 
                          {
                              Title = song.Name,
                              Artist = song.Artist,
 
-                             // Se podría incluir la URL para S3 o Azure si se usaran
+                             //
                          };
                          var jsonString = JsonSerializer.Serialize(metadata, new JsonSerializerOptions { WriteIndented = true });
 

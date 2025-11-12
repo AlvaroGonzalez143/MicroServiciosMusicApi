@@ -1,12 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using YourProject.Endpoints;
-// Necesario para serializar el JSON
 var builder = WebApplication.CreateBuilder(args);
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
 var serverVersion = ServerVersion.AutoDetect(connection);
 builder.Services.AddAntiforgery();
 builder.Services.AddDbContext<SongBD>(options =>
@@ -27,7 +24,6 @@ app.Crear();
 app.Consultar();
 app.Descargar();
 
-//Paqueteria zip
 
 
 app.UseHttpsRedirection();

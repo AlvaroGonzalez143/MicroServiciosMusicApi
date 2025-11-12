@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X5zJqS9ZkNo=",
+  "dgSpecHash": "yILcXG+4kzg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alvaro\\Desktop\\DiseñoWebs\\MicroServicios\\MusicApi\\MusicApi.csproj",
+  "projectFilePath": "C:\\Users\\Alvaro\\Documents\\GitHub\\MicroServiciosMusicApi\\MusicApi\\MusicApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alvaro\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\9.0.10\\microsoft.aspnetcore.diagnostics.entityframeworkcore.9.0.10.nupkg.sha512",
     "C:\\Users\\Alvaro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
